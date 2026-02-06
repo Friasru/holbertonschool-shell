@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown -h guillaume:vincent hello
+sudo chown -R --from=guillaume:vincent hello
