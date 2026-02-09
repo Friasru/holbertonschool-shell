@@ -1,2 +1,3 @@
 #!/bin/bash
-awk '{ printf "%s", substr($0,1,1) } END { printf "\n" }'
+##!/bin/bash
+awk 'BEGIN{ORS=""}{for(i=1;i<=length;i++){c=substr($0,i,1); if(c~/[A-Za-z]/){print c; break}}}END{print "\n"}'
